@@ -1,0 +1,116 @@
+@font-face {
+  src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2")
+    format("woff2");
+  font-family: "Meta";
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+
+font-family: 'Noto Sans KR';
+
+font-style: normal;
+
+font-weight: 300;
+
+src: url(/fonts/NotoSansKr/NotoSansKR-Light.woff2) format('woff2'),
+
+url(/fonts/NotoSansKr/NotoSansKR-Light.woff) format('woff'),
+
+url(/fonts/NotoSansKr/NotoSansKR-Light.otf) format('opentype');
+
+}
+
+@font-face {
+
+font-family: 'Noto Sans KR';
+
+font-style: normal;
+
+font-weight: 400;
+
+src: url(/fonts/NotoSansKr/NotoSansKR-Regular.woff2) format('woff2'),
+
+url(/fonts/NotoSansKr/NotoSansKR-Regular.woff) format('woff'),
+
+url(/fonts/NotoSansKr/NotoSansKR-Regular.otf) format('opentype');
+
+}
+
+@font-face {
+
+font-family: 'Noto Sans KR';
+
+font-style: normal;
+
+font-weight: 700;
+
+src: url(/fonts/NotoSansKr/NotoSansKR-Bold.woff2) format('woff2'),
+
+url(/fonts/NotoSansKr/NotoSansKR-Bold.woff) format('woff'),
+
+url(/fonts/NotoSansKr/NotoSansKR-Bold.otf) format('opentype');
+
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family:Noto Sans KR sans-serif;
+}
+
+body{
+	width:100vw;
+	height:100vh;
+}
+h1{
+	padding:2rem;
+	text-align: center;
+}
+table{
+	width:100%;
+}
+td{
+	text-align: center;
+	cursor:pointer;
+}
+td:not(:nth-of-type(4)){
+	width:8rem;
+}
+td:nth-of-type(4){
+	font-weight:bold;
+	font-size:2rem;
+}
+td:nth-of-type(5):hover{
+	color:red;
+}
+td:nth-of-type(6):hover{
+	color:red;
+}
+.btn{
+	display:flex;
+	flex-direction:column;
+	justify-content: space-between;
+}
+a {
+  transition: all 0.5s;
+  -webkit-text-stroke: 4px #d6f4f4;
+  font-variation-settings: "wght" 500, "ital" 1;
+  font-size: 5rem;
+  text-align: center;
+  color: transparent;
+  font-family: "Meta", sans-serif;
+  text-shadow: 5px 5px 0px #07bccc,
+    5px 5px 0px #e601c0,
+    10px 10px 0px #e9019a,
+    15px 15px 0px #f40468,
+    20px 20px 10px #482896;
+  cursor: pointer;
+}
+
+a:hover {
+  font-variation-settings: "wght" 100, "ital" 0;
+  text-shadow: none;
+}
